@@ -3,16 +3,17 @@ import axios from "axios";
 
 
 const useFetch = (endpoint, query) => {
-
+  
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+
 
   const options = {
     method: "GET",
     url: `https://jsearch.p.rapidapi.com/${endpoint}`,
     headers: {
-      "X-RapidAPI-Key": 'dc811aafffmsh7cf2c61db109937p1ffcfajsne527db6bea89',
+      "X-RapidAPI-Key": '6e1377515dmsh330219363a3ada5p188f73jsnef0e07aef67f',
       "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
     },
     params: { ...query },
@@ -47,3 +48,4 @@ const useFetch = (endpoint, query) => {
 };
 
 export default useFetch;
+// 'dc811aafffmsh7cf2c61db109937p1ffcfajsne527db6bea89'
